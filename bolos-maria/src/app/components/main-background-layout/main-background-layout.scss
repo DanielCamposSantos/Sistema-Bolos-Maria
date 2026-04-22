@@ -7,20 +7,34 @@ main {
 
     .calendario-sect {
         flex-grow: 1;
-        background: url("../../../../public/images/petala-rosa-1.svg") no-repeat fixed 4px 52px, url("../../../../public/images/petala-rosa-2.svg") no-repeat fixed top left 150px, $primary-color ;
+        background: url("/images/petala-rosa-1.svg") no-repeat fixed 4px 52px, url("/images/petala-rosa-2.svg") no-repeat fixed top left 150px, url("/images/petala-marrom-2.svg") no-repeat fixed bottom left, $primary-color ;
+        position: relative;
 
-        #petala1 {
-            width: 115px;
-            height: 119px;
-            padding: 52px 0 0 4px;
-
-            background-repeat: no-repeat;
-            background-position: center;
+        .petala1-overlay {
+            position: absolute;
+            top: 0px;
+            right: -63px;
+            z-index: 10;
+            width: 204px;
+            height: 215px;
         }
+
+        .petala3-overlay {
+            position: absolute;
+            bottom: 0px;
+            right: -55px;
+            z-index: 10;
+            width: 157px;
+            height: 156px;
+        }
+
+
     }
 
     .main-sect {
-        flex-grow: 0.7;
+        position: relative;
+
+        flex-grow: 0.4;
         background-color: $secondary-color;
     }
 }
