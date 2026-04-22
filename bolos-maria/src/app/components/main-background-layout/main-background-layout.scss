@@ -1,0 +1,26 @@
+@use "variables" as *;
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .calendario-sect {
+        flex-grow: 1;
+        background: url("../../../../public/images/petala-rosa-1.svg") no-repeat fixed 4px 52px, url("../../../../public/images/petala-rosa-2.svg") no-repeat fixed top left 150px, $primary-color ;
+
+        #petala1 {
+            width: 115px;
+            height: 119px;
+            padding: 52px 0 0 4px;
+
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    .main-sect {
+        flex-grow: 0.7;
+        background-color: $secondary-color;
+    }
+}
